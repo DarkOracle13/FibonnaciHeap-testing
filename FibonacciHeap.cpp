@@ -19,6 +19,8 @@ struct node {
   char C;
 };
 
+
+
 // Implementation of Fibonacci heap
 class FibonacciHeap {
    private:
@@ -35,6 +37,7 @@ class FibonacciHeap {
   node *Extract_Min(node *);
   int Consolidate(node *);
   int Display(node *);
+  int DeleteAll();
   node *Find(node *, int);
   int Decrease_key(node *, int, int);
   int Delete_key(node *, int);
